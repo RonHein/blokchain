@@ -133,6 +133,8 @@ if __name__ == "__main__":
 
     # 5) Inspect suspicious transactions
     anomalies = transactions_df[transactions_df["is_anomaly"] == -1]
+    print(f"\nTotal anomalies: {len(anomalies)}")
+
     print("\nAnomalies:")
     print(anomalies.head(20))
 
